@@ -1,8 +1,4 @@
-// Add a method to our _ object called clamp.
-// Add three parameters to this method: number, lower, and upper.
-// Within the method, create a variable called lowerClampedValue that is set equal to the return value of Math.max() called with number and lower.
-// Create a variable called clampedValue that is set equal to the return value of Math.min() called with lowerClampedValue and upper.
-// Return clampedValue as our final value from the method.
+
 
 clamp(number, lower, upper) {
 
@@ -11,7 +7,3 @@ clamp(number, lower, upper) {
     
     return clampedValue;
 }
-
-
-
-};
