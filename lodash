@@ -70,3 +70,18 @@ has(obj, key) {
     return key in obj
     }
 }
+
+///////////////////////////////////////////////
+// Invert
+
+invert(obj) {
+    let invertedObject = {};
+
+    for(let keys in obj) {        
+        let originalValue = obj[keys];        
+        invertedObject[originalValue] = keys;
+    }
+
+    return invertedObject;
+
+}
