@@ -115,6 +115,19 @@ drop(arr, n) {
     var droppedArray = arr.slice(n);
 
     return droppedArray;
+}
+///////////////////////////////////////////////
+// dropWhile
 
+
+dropWhile(array, predicate) {
+
+    const dn = (element, index) => {
+        return !predicate(element, index, array)
+    };
+
+    let dropNumber = array.findIndex(dn);
+    let droppedArray = this.drop(array, dropNumber)
+    return droppedArray;
 
 }
