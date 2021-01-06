@@ -101,7 +101,20 @@ findKey(obj, predicate) {
 
     undefined
     return undefined
+}
 
+///////////////////////////////////////////////
+// drop
+
+drop(arr, n) {
+
+    if(n === undefined){
+        n = 1;
+    };
+
+    var droppedArray = arr.slice(n);
+
+    return droppedArray;
 
 
 }
