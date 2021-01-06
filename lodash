@@ -34,3 +34,14 @@ inRange(number, start, end) {
 
     return isInRange;
 }
+
+///////////////////////////////////////////////
+// Words
+
+words(str) {
+
+    let words = str.split(' ');
+
+    return words;
+
+}
