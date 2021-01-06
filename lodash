@@ -45,3 +45,20 @@ words(str) {
     return words;
 
 }
+
+///////////////////////////////////////////////
+// Pad
+
+pad(str, length) {
+    if(length <= str.length){
+        return str
+    };
+
+    let startPaddingLength = Math.floor((length - str.length) / 2);
+    let endPaddingLength = length - str.length - startPaddingLength;
+    let paddedString = ' '.repeat(startPaddingLength) + str + ' '.repeat(endPaddingLength)
+
+    return paddedString;
+
+
+}
