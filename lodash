@@ -62,3 +62,11 @@ pad(str, length) {
 
 
 }
+
+///////////////////////////////////////////////
+// Pad
+
+has(obj, key) {
+    return key in obj
+    }
+}
