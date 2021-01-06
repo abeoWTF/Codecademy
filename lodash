@@ -85,3 +85,23 @@ invert(obj) {
     return invertedObject;
 
 }
+
+///////////////////////////////////////////////
+// findKey
+
+findKey(obj, predicate) {
+
+    for(let key in obj) {
+        var value = obj[key];
+        var predicateReturnValue = predicate(value)
+        if(predicateReturnValue === true){
+            return key
+        }
+    }
+
+    undefined
+    return undefined
+
+
+
+}
