@@ -1,4 +1,5 @@
-
+///////////////////////////////////////////////
+// Clamp
 
 clamp(number, lower, upper) {
 
@@ -6,4 +7,30 @@ clamp(number, lower, upper) {
     let clampedValue = Math.min(lowerClampedValue, upper)
     
     return clampedValue;
+}
+
+///////////////////////////////////////////////
+// InRange
+
+inRange(number, start, end) {
+    if(end === undefined) {
+        end = start;
+        start = 0;
+    };
+
+    if(start > end) { 
+        let temp = start; 
+        start = end; 
+        end = temp; 
+    };
+
+    let isInRange;
+
+    if(start <= number && number < end ) {
+        isInRange = true;
+    } else {
+        isInRange = false;
+    }
+
+    return isInRange;
 }
