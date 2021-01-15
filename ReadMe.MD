@@ -2,4 +2,4 @@
 
 ## Explained
 
-This are the assignemnts from Codecademy
+This are the assignments from Codecademy
